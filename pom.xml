@@ -26,11 +26,11 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexus</id>
-      <url>https://ec2-52-29-80-74.eu-central-1.compute.amazonaws.com/nexus/content/repositories/snapshots</url>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
     <repository>
       <id>nexus</id>
-      <url>https://ec2-52-29-80-74.eu-central-1.compute.amazonaws.com/nexus/content/repositories/releases</url>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
     </repository>
   </distributionManagement>
 
