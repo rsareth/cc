@@ -23,6 +23,17 @@
         <logback.version>1.0.7</logback.version>
     </properties>
 
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>https://ec2-52-29-80-74.eu-central-1.compute.amazonaws.com/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus</id>
+      <url>https://ec2-52-29-80-74.eu-central-1.compute.amazonaws.com/nexus/content/repositories/releases</url>
+    </repository>
+  </distributionManagement>
+
     <dependencyManagement>
 
         <dependencies>
