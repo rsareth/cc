@@ -5,6 +5,7 @@
 
 <body>
 <div>
+    <div id="version"></div>
     <b>click count : </b><span id="count"></span> <br/><br/>
     <input id="clickButton" type="button" value="click"/>
 </div>
@@ -12,6 +13,10 @@
 </html>
 <script>
     $(document).ready(function () {
+        $.get("rest/version", function(data) {
+            var result = "version: " + data;
+            $("#version").text(result);
+        });
         $.get("rest/click", function (data) {
             $('#count').text(data);
         });
